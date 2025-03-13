@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align="center">
+    <h1>INSIRA OS DADOS DO CLIENTE</h1>
+    <br>
+    <form action="cadastro.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+        <label for="data_nascimento">Data de nascimento:</label><br>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+        <label for="estado_civil">Estado civil:</label><br>
+        <label>
+            <input type="checkbox" name="estado_civil" value="C"> C
+        </label>
+        <label>
+            <input type="checkbox" name="estado_civil" value="S"> S
+        </label><br><br>
+        <label for="sexo"></label>Sexo:<br>
+        <label>
+            <input type="checkbox" name="sexo" value="M"> M
+        </label>
+        <label>
+            <input type="checkbox" name="sexo" value="F"> F
+        </label><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required ><br><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+        <label for="renda_anual">Renda anual:</label><br>
+        <input type="number" id="renda_anual" name="renda_anual" required><br><br>
+        <label for="qtd_filhos">Qtde de filhos:</label><br>
+        <input type="number" id="qtd_filhos" name="qtd_filhos" required><br><br>
+        <label for="escolaridade">Escolaridade:</label><br>
+        <label>
+            <input type="checkbox" name="escolaridade" value="Graduado"> Graduado
+        </label>
+        <label>
+            <input type="checkbox" name="escolaridade" value="Pós_graduado"> Pós-graduado
+        </label>
+        <label>
+            <input type="checkbox" name="escolaridade" value="Parcial"> Parcial
+        </label><br><br>
+        <input type="submit" value="Enviar">
+
+
+
+
+</body>
+</html>

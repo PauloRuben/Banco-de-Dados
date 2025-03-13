@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Formulário */
+        form {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Título */
+        form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #343a40;
+            font-size: 24px;
+        }
+
+        /* Labels */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        /* Inputs */
+        form input[type="text"],
+        form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #495057;
+            box-sizing: border-box;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="number"]:focus {
+            border-color: #80bdff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+        }
+
+        /* Botão de envio */
+        form input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="produtos_novo.php" method="post">
+        <h1>Novo Produto</h1>
+        
+        <label for="Produto">ID Produto:</label>
+        <input type="number" id="ID_Produto" name="ID_Produto"> <br>
+
+        <label for="Produto">Nome Produto:</label>
+        <input type="text" id="Nome_Produto" name="Nome_Produto"> <br>
+
+        <label for="ID_Categoria">ID Categoria:</label>
+        <input type="number" id="ID_Categoria" name="ID_Categoria"><br>
+
+        <label for="Marca_Produto">Marca Produto:</label>
+        <input type="text" id="Marca_Produto" name="Marca_Produto"><br>
+    
+        <label for="NumerodeSerie">Numero de Série:</label>
+        <input type="text" id="Num_Serie" name="Num_Serie"><br>
+
+        <label for="PrecoUnitário">Preço Unitário:</label>
+        <input type="number" id="Preco_Unit" name="Preco_Unit"><br>
+
+        <label for="CustoUnitario">Custo Unitário:</label>
+        <input type="number" id="Custo_Unit" name="Custo_Unit"> <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

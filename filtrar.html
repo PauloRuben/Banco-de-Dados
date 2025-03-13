@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>filtrar</title>
+    </head>
+    <body>
+       <h1>Filtrar Dados do cliente</h1> 
+       <form action="filtrar.php" method="get">
+        <label for="filtroid">Filtrar por id:</label>
+        <input type="number" name="filtroid" id="filtroid">
+        <br>
+        <label for="filtro">Filtrar por nome:</label>
+        <input type="text" name="filtro" id="filtrar">
+        <br>
+        <label for="filtrosobre">Filtrar por sobrenome:</label>
+        <input type="text" name="filtrosobre" id="filtrasobre">
+        <br>
+        <label for="filtrocivil">Filtrar por Estado Civil:</label>
+        <input type="checkbox" name="filtrocivil" id="filtracivil" value="C"><label for="">Casado</label>
+        <input type="checkbox" name="filtrocivil" id="filtracivil" value="S"><label for="">Solteiro</label>
+        <br>
+        <input type="submit" value="Filtrar">
+       </form>
+    </body>
+</html>
